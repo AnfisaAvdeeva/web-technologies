@@ -28,21 +28,35 @@
         <section class="intro">
             <h1 class="page-title">Добро пожаловать</h1>
             <p class="paragraph">Это главная страница нашего сайта про веб-разработку.</p>
+            <img src="/src/assets/img/intro.jpg" alt="Веб-разработка" width="400">
         </section>
 
         <hr>
 
         <section class="about">
             <h3 class="subtitle">О нас</h3>
-            <h4 class="subtitle-small">Мы делаем сайты</h4>
-            <p class="paragraph">Думаем, что все, кто интересуется этой темой, найдут что-то для себя.</p>
+            <article class="about-item">
+                <h4 class="subtitle-small">Мы делаем сайты</h4>
+                <p class="paragraph">Думаем, что все, кто интересуется этой темой, найдут что-то для себя.</p>
+            </article>
         </section>
 
         <hr>
 
         <section class="services">
             <h3 class="subtitle">Услуги</h3>
-            <p class="paragraph">Верстка, дизайн, поддержка сайтов.</p>
+            <ul class="services-list">
+                <li>Верстка</li>
+                <li>Дизайн</li>
+                <li>Поддержка сайтов</li>
+            </ul>
+
+            <form class="service-form">
+                <h4 class="subtitle-small">Заказать услугу</h4>
+                <label>Full Name<input class="input-field" type="text" name="name"></label><br>
+                <label>Phone <input class="input-field" type="tel" name="phone"></label><br>
+                <button class="submit-btn" type="submit">submit</button>
+            </form>
         </section>
 
     </main>
@@ -60,6 +74,6 @@
         </ul>
         <p class="paragraph">Все права защищены</p>
     </footer>
-
+    
 </body>
 </html>
