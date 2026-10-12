@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="/src/assets/styles/style.css">
 </head>
 <body>
-    <header class="header">
+
+    <header class="site-header">
         <img src="/src/assets/img/logo.png" alt="Логотип" width="100">
-        <nav>
+        <nav class="main-nav">
             <ul class="menu">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
@@ -20,19 +21,35 @@
         </nav>
     </header>
 
-    <h1 class="page-title">Добро пожаловать</h1>
-    <p class="paragraph">Это главная страница нашего сайта про веб-разработку.</p>
+    <hr>
 
-    <h3 class="subtitle">О нас</h3>
-    <h4 class="subtitle-small">Мы делаем сайты</h4>
-    <p class="paragraph">Думаем, что все, кто интересуется этой темой, найдут что-то для себя.</p>
+    <main class="main-content">
 
-    <h3 class="subtitle">Услуги</h3>
-    <p class="paragraph">Верстка, дизайн, поддержка сайтов.</p>
+        <section class="intro">
+            <h1 class="page-title">Добро пожаловать</h1>
+            <p class="paragraph">Это главная страница нашего сайта про веб-разработку.</p>
+        </section>
+
+        <hr>
+
+        <section class="about">
+            <h3 class="subtitle">О нас</h3>
+            <h4 class="subtitle-small">Мы делаем сайты</h4>
+            <p class="paragraph">Думаем, что все, кто интересуется этой темой, найдут что-то для себя.</p>
+        </section>
+
+        <hr>
+
+        <section class="services">
+            <h3 class="subtitle">Услуги</h3>
+            <p class="paragraph">Верстка, дизайн, поддержка сайтов.</p>
+        </section>
+
+    </main>
 
     <hr>
 
-    <footer class="footer">
+    <footer class="site-footer">
         <h3 class="subtitle">Контакты</h3>
         <p class="paragraph">Свяжитесь с нами любым удобным способом.</p>
         <hr>
@@ -43,5 +60,6 @@
         </ul>
         <p class="paragraph">Все права защищены</p>
     </footer>
+
 </body>
 </html>
