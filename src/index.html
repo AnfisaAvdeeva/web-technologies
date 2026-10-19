@@ -3,77 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>IT WEBSITE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/src/assets/styles/style.css">
 </head>
-<body>
 
+<body>
     <header class="site-header">
-        <img src="/src/assets/img/logo.png" alt="Логотип" width="100">
-        <nav class="main-nav">
-            <ul class="menu">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
-        <nav class="breadcrumbs">
-            <span class="breadcrumb-item active">Главная</span>
-        </nav>
+        <div class="header-wrapper">
+            <a href="index.html" class="logo"><span class="text-blue">IT WEBSITE</a>
+            <nav class="main-nav">
+                <ul class="menu">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Cases</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="header-contacts">
+                <a href="tel:+71111111111" class="phone"><i class="fa-solid fa-mobile-screen-button"></i><span class="text-blue">+7 (111) 111 11 11</span></a>
+                <a href="tel:+71111111111" class="phone"><span class="text-blue"> +7 (111) 111 11 11</span></a>
+                <a href="mailto:thousanditcompany@gmail.com" class="email"><i class="fa-regular fa-envelope"></i><span class="text-blue">itcompany@mail.com</span></a>
+            </div>
+        </div>
     </header>
 
-    <hr>
-
     <main class="main-content">
+        <section class="hero">
+            <div class="hero-left">
+                <h1 class="hero-title">
+                    Development of <span class="text-blue">mobile</span><br>
+                    <span class="text-blue">applications</span> and <span class="text-blue">web services</span> of<br>
+                    any complexity
+                </h1>
+                <p class="hero-subtitle">
+                    We create mobile applications for iOS, Android that transfer your business to mobile<br>
+                    applications of your customers' devices<br>
+                    
+                </p>
 
-        <section class="intro">
-            <h1 class="page-title">Добро пожаловать</h1>
-            <p class="paragraph">Это главная страница нашего сайта про веб-разработку.</p>
-            <img src="/src/assets/img/intro.jpg" alt="Веб-разработка" width="400">
+                <div class="callback-box">
+                    <h2 class="callback-title">Leave your contacts and we will call you back<br>within 30 minutes</h2>
+                    <form class="callback-form">
+                        <div class="form-group">
+                            <label>Phone number</label>
+                            <input type="tel" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label>Full name</label>
+                            <input type="text" name="name">
+                        </div>
+                        <button type="submit" class="btn-submit">Get consultation</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <img src="/src/assets/img/phones.png" alt="Мобильные приложения" class="hero-phones-img">
+            </div>
         </section>
-
-        <hr>
-
-        <section class="about">
-            <h3 class="subtitle">О нас</h3>
-            <article class="about-item">
-                <h4 class="subtitle-small">Мы делаем сайты</h4>
-                <p class="paragraph">Думаем, что все, кто интересуется этой темой, найдут что-то для себя.</p>
-            </article>
-        </section>
-
-        <hr>
-
-        <section class="services">
-            <h3 class="subtitle">Услуги</h3>
-            <ul class="services-list">
-                <li>Верстка</li>
-                <li>Дизайн</li>
-                <li>Поддержка сайтов</li>
-            </ul>
-
-            <form class="service-form">
-                <h4 class="subtitle-small">Заказать услугу</h4>
-                <label>Full Name<input class="input-field" type="text" name="name"></label><br>
-                <label>Phone <input class="input-field" type="tel" name="phone"></label><br>
-                <button class="submit-btn" type="submit">submit</button>
-            </form>
-        </section>
-
     </main>
 
-    <hr>
+    <div class="footer-wrapper">
+        <footer class="site-footer">
+            <h2 class="footer-title">IT WEBSITE</h2>
+            <div class="footer-grid">
 
-    <footer class="site-footer">
-        <h3 class="subtitle">Контакты</h3>
-        <p class="paragraph">Свяжитесь с нами любым удобным способом.</p>
-        <hr>
-        <ul class="contacts">
-            <li>Офис в центре города</li>
-            <li>+7 (999) 678-67-67</li>
-            <li>info@catsandwebsites.ru</li>
-        </ul>
-        <p class="paragraph">Все права защищены</p>
-    </footer>
-    
+                <div class="footer-item">
+                    <div class="footer-label">
+                        <i class="fa-solid fa-mobile-screen-button"></i> Contact nums
+                    </div>
+                    <a href="tel:+77783959026" class="footer-link">+7 (778) 395 90 26</a>
+                </div>
+                
+                <div class="footer-item">
+                    <div class="footer-label">
+                        <i class="fa-regular fa-envelope"></i> Post
+                    </div>
+                    <a href="mailto:mail@mail.com" class="footer-link">mail@mail.com</a>
+                </div>
+                
+                <div class="footer-item">
+                    <div class="footer-label">
+                        <i class="fa-solid fa-location-dot"></i> Address
+                    </div>
+                    <p class="footer-link">City city, street st. 90</p>
+                </div>
+                
+                <div class="footer-item">
+                    <div class="footer-label">
+                        <i class="fa-regular fa-file-lines"></i> Leave a request
+                    </div>
+                    <a href="#" class="footer-link">Leave a request</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p><i class="fa-solid fa-earth-americas"></i> We work throughout world</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
