@@ -11,20 +11,37 @@
 <body>
     <header class="site-header">
         <div class="header-wrapper">
+
+            <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+            
+            <label for="burger-toggle" class="burger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
             <a href="index.html" class="logo">IT WEBSITE</a>
-            <nav class="main-nav">
-                <ul class="menu">
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Media</a></li>
-                    <li><a href="#">Cases</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
-                </ul>
-            </nav>
-            <div class="header-contacts">
-                <a href="tel:+71111111111" class="phone"><i class="fa-solid fa-mobile-screen-button"></i><span class="text-blue">+7 (111) 111 11 11</span></a>
-                <a href="tel:+71111111111" class="phone"><span class="text-blue"> +7 (111) 111 11 11</span></a>
-                <a href="mailto:itcompany@mail.com" class="email"><i class="fa-regular fa-envelope"></i><span class="text-blue">itcompany@mail.com</span></a>
+
+            <div class="header-email">
+                <a href="mailto:itcompany@mail.com" class="email">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span class="text-blue">itcompany@mail.com</span>
+                </a>
+            </div>
+
+            <div class="nav-and-contacts">
+                <nav class="main-nav">
+                    <ul class="menu">
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Media</a></li>
+                        <li><a href="#">Cases</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="header-contacts">
+                    <a href="tel:+71111111111" class="phone"><i class="fa-solid fa-mobile-screen-button"></i><span class="text-blue">+7 (111) 111 11 11</span></a>
+                    <a href="tel:+71111111111" class="phone"><span class="text-blue"> +7 (111) 111 11 11</span></a>
+                    <a href="mailto:itcompany@mail.com" class="email"><i class="fa-regular fa-envelope"></i><span class="text-blue">itcompany@mail.com</span></a>
+                </div>
             </div>
         </div>
     </header>
@@ -40,8 +57,14 @@
                 <p class="hero-subtitle">
                     We create mobile applications for iOS, Android that transfer your business to mobile<br>
                     applications of your customers' devices<br>
-                    
                 </p>
+
+                <div class="hero-right-mobile">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/src/assets/img/phones-tablet.png">
+                        <img src="/src/assets/img/phones.png" alt="Мобильные приложения" class="hero-phones-img">
+                    </picture>
+                </div>
 
                 <div class="callback-box">
                     <h2 class="callback-title">Leave your contacts and we will call you back<br>within 30 minutes</h2>
@@ -60,45 +83,69 @@
             </div>
 
             <div class="hero-right">
-                <img src="/src/assets/img/phones.png" alt="Мобильные приложения" class="hero-phones-img">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="/src/assets/img/phones-tablet.png">
+                    <img src="/src/assets/img/phones.png" alt="Мобильные приложения" class="hero-phones-img">
+                </picture>
+            </div>
+
+        </section>
+
+        <section class="development-cycle">
+            <div class="container">
+                <h2 class="section-main-title">Full development cycle</h2>
+                <p class="section-subtitle">We use proven technologies</p>
+
+                <div class="cycle-grid">
+                    <div class="tech-columns">
+                        <div class="tech-group">
+                            <h3 class="tech-title">Web</h3>
+                            <p class="tech-list">PHP / Javascript / Node.JS / Web Socket / Socket.io / Vue.js / Nuxt / MySQL / Laravel / GO lang / django / Python</p>
+                        </div>
+                        <div class="tech-group">
+                            <h3 class="tech-title">Mobile</h3>
+                            <p class="tech-list">Swift / Kotlin / Alamofire / Firebase / CoreData / Room / Realm / Coroutine / RxJava / RxSwift / Unit Test / Navigation</p>
+                        </div>
+                    </div>
+
+                    <div class="services-column">
+                        <ul class="services-list-new">
+                            <li><a href="#">iOS development <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a href="#">Android development <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a href="#">Web development <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a href="#">UI/UX design <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a href="#">Testing <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a href="#">Launch <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a href="#">IT consulting <i class="fa-solid fa-chevron-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
+        
     </main>
 
     <div class="footer-wrapper">
         <footer class="site-footer">
             <h2 class="footer-title">IT WEBSITE</h2>
             <div class="footer-grid">
-
                 <div class="footer-item">
-                    <div class="footer-label">
-                        <i class="fa-solid fa-mobile-screen-button"></i> Contact nums
-                    </div>
+                    <div class="footer-label"><i class="fa-solid fa-mobile-screen-button"></i> Contact nums</div>
                     <a href="tel:+77783959026" class="footer-link">+7 (778) 395 90 26</a>
                 </div>
-                
                 <div class="footer-item">
-                    <div class="footer-label">
-                        <i class="fa-regular fa-envelope"></i> Post
-                    </div>
+                    <div class="footer-label"><i class="fa-regular fa-envelope"></i> Post</div>
                     <a href="mailto:mail@mail.com" class="footer-link">mail@mail.com</a>
                 </div>
-                
                 <div class="footer-item">
-                    <div class="footer-label">
-                        <i class="fa-solid fa-location-dot"></i> Address
-                    </div>
+                    <div class="footer-label"><i class="fa-solid fa-location-dot"></i> Address</div>
                     <p class="footer-link">City city, street st. 90</p>
                 </div>
-                
                 <div class="footer-item">
-                    <div class="footer-label">
-                        <i class="fa-regular fa-file-lines"></i> Leave a request
-                    </div>
+                    <div class="footer-label"><i class="fa-regular fa-file-lines"></i> Leave a request</div>
                     <a href="#" class="footer-link">Leave a request</a>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <p><i class="fa-solid fa-earth-americas"></i> We work throughout world</p>
             </div>
