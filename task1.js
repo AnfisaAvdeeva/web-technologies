@@ -1,11 +1,11 @@
 function pickPropArray(arr, prop) {
     const result = [];
 
-    arr.forEach(function(item) {
-        if (prop in item) {
-            result.push(item[prop]);
+    for (let i = 0; i < arr.length; i++) {
+        if (prop in arr[i]) {
+            result.push(arr[i][prop]);
         }
-    });
+    }
 
     return result;
 }
